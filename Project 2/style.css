@@ -1,0 +1,369 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=Outfit&display=swap');
+
+/* root */
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(32, 66%, 32%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+/* css reset*/ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body part */
+body {
+    background: var(--Eggshell);
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container part/style */
+.container {
+    max-width: 708px;
+    background: var(--White);
+    border-radius: 30px;    
+}
+
+/* div 1 -  img */
+
+.img-container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+
+.img-container img {
+    width: 100%;
+    border-radius: 40px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+/* div - 1 texts */
+.dish-title {
+    font-family: 'Young Serif', serif;
+    font-size: 2.3em;
+    padding-left: 32px;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+
+.dish-receipt {
+    font-family: 'Outfit', sans-serif;
+    padding-left: 32px;
+    max-width: 700px;
+    padding-top: 10px;
+    opacity: 80%;
+}
+
+/* div 2 start */
+.preparation-time-div {
+    max-width: 650px;
+    height: 200px;
+    background: var(--Rose-White);
+    border-radius: 20px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-top: 30px;
+}   
+/* preparaiton paragraph */
+.preparation-p {
+    text-transform: capitalize;
+    font-family: 'Outfit', sans-serif;
+    color: #592a40;
+    font-weight: bolder;
+    margin-left: -15px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+/* preparation ul list item - style */
+.steps {
+    margin: 15px;
+    margin-top: -1px;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* span part */
+.preparation-ul-li-span {
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-family: 'Outfit', sans-serif;
+    color: var(--Dark-Charcoal);
+    padding-left: 8px;
+    padding-right: 5px;
+}       
+
+/* div - 3 start */
+.ingredients {
+    margin-left: 32px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    color: var(--Wenge-Brown);
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Young Serif', serif;
+    margin-bottom: 20px;
+}
+
+/* ingredients step style */
+.ingredients-step {
+    margin-left: 65px;
+    padding-bottom: 10px;
+    font-family: 'Outfit', sans-serif;
+    opacity: 80%;
+}
+
+/* div - 4 start */
+/* instructuin paragraph */
+.instruction-p {
+    margin-left: 32px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    color: var(--Wenge-Brown);
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Young Serif', serif;
+    margin-bottom: 20px;
+}
+
+/* instruction steps */
+.instruction-steps {
+    list-style: none;
+    max-width: 650px;
+    margin-left: 30px;
+    font-family: 'Outfit', sans-serif;
+    padding-bottom: 20px;
+}
+
+/* instruction span - 1 */
+.instuction-span {
+    color: var(--Wenge-Brown);
+    font-size: 1.2em;
+    padding-right: 10px;
+    font-weight: bolder;
+}
+
+/* hard/tired part */
+.instructuin-span-2 {
+    font-weight: bolder;
+    padding-right: 3px;
+}
+
+.intented-text-4 {
+    padding-left: 2px;
+}
+
+.intented-text-1 {
+    padding-left: 5px;
+}
+
+.intented-text-2 {
+    padding-left: 1px;
+}
+
+.intented-text-3 {
+    padding-left: 1px;
+}
+
+
+/* hr - 1 part */
+.hr-1,
+.hr-2 {
+    position: relative;
+    max-width: 630px;
+    margin-left: 30px;
+    top: 10px;
+    opacity: 80%;
+}
+
+/* div - 5 part */
+/* nutrion text */
+.nutrion-p {
+    margin-left: 32px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    color: var(--Wenge-Brown);
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Young Serif', serif;
+    margin-bottom: 20px;
+}
+
+/* nutrion below text */
+.nutrition-below-text {
+    font-family: 'Outfit', sans-serif;
+    margin-left: 30px;
+    opacity: 80%;
+}
+
+.p-divs {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* nutrition values */
+.calories,
+.carbs,
+.protein,
+.fat {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -140px;
+    opacity: 80%;
+}
+
+/* nutrition values span */
+.calories-span,
+.carbs-span,
+.protein-span,
+.fat-span {
+    margin-right: 140px;
+    color: var(--Wenge-Brown);
+    font-weight: bolder;
+}
+
+.fat-span {
+    padding-bottom: 40px;
+}
+
+/* hr style */
+.hr-calories,
+.hr-carbs,
+.hr-protein {
+    position: relative;
+    max-width: 630px;
+    opacity: 60%;
+    margin: 20px;
+    left: -20px;
+}
+
+
+.instruction-ul li {
+    display: flex;
+}
+
+/* Responsive time */
+@media only screen and (max-width: 375px) {
+   /* img part - responsive */
+    .img-container img{
+        margin-top: 0;
+        border-radius: 0;        
+    }
+
+    /* dish receipt */
+
+    .dish-receipt {
+        padding-right: 30px;
+    }
+    
+    /* preparation time div - responsive */
+
+    .preparation-time-div {
+        max-width: 300px;
+    }
+
+    /* ingredients step - responsive */
+
+    .ingredients-step:nth-of-type(5) {
+        max-width: 250px;
+    }
+    /* instruction step - responsive */
+
+    .instruction-steps:nth-of-type(1) {
+        max-width: 280px;
+    }
+
+    .instruction-steps:nth-of-type(2) {
+        max-width: 300px;
+    }
+
+    .instruction-steps:nth-of-type(3) {
+        max-width: 300px;
+    }
+    
+    .instruction-steps:nth-of-type(4) {
+        max-width: 330px;
+    }
+    
+    .instruction-steps:nth-of-type(5) {
+        max-width: 300px;
+    }
+
+    .instruction-steps:nth-of-type(6) {
+        max-width: 300px;
+    }
+
+    /* hr responsive */
+
+    .hr-1 {
+        width: 300px;
+        opacity: 50%;
+    }
+
+    .hr-2 {
+        width: 300px;
+        opacity: 50%;
+    }
+
+    /* nutrion below text - responsive */
+
+    .nutrition-below-text {
+        max-width: 300px;
+    }
+
+
+    /* nutrition responsive */
+
+
+    .calories{
+        padding-left: 150px;
+        font-weight: bolder;
+    }
+
+    .carbs,
+    .fat{
+        padding-left: 145px;
+    }
+
+    .fat {
+        padding-left: 155px;
+    }
+
+    .protein{
+        padding-left: 155px;
+    }
+    
+    /* nutrion span part - responsive */
+
+    .carbs-span {
+        padding-right: 10px;
+    }
+    
+    .protein-span {
+        padding-right: 10px;
+    }
+
+    .fat-span {
+        padding-left: 23px;
+    }
+
+}
+
+
+
+/* Project End */
