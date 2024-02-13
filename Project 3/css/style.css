@@ -1,0 +1,161 @@
+/* font - inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* root */
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+
+/* css reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+
+body {
+    background: var(--Off-Black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container part */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+    background: var(--Dark-Grey);
+    border-radius: 20px;
+}
+
+/* img part - style/responsive trick */
+
+
+.img-container {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* div-1 P part - style */
+.divs-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.name-lastName {
+    margin-top: 20px;
+    font-size: 1.7em;
+    color: var(--White);
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    max-width: 204px;
+    margin: 0 auto;
+
+}
+
+.addres {
+    color: var(--Green);
+    text-transform: capitalize;
+    font-size: .8em;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    max-width: 210px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+
+.below-text {
+    color: var(--White);
+    opacity: 60%;
+    max-width: 290px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+
+/* div - 1 end */
+
+/* div - 2 start */
+
+/* div - 2 list items - style*/
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.social-links {
+    width: 330px;
+    max-width: 330px;
+    height: 70px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    background: var(--Grey);
+    list-style: none;
+    text-align: center;
+    padding-top: 25px;
+    margin: 15px;
+    border-radius: 20px;
+}
+ */
+
+.social-links {
+    width: 520px;
+    height: 70px;
+    color: var(--White);
+    font-family: "Inter", sans-serif;
+    background: var(--Grey);
+    list-style: none;
+    text-align: center;
+    padding-top: 25px;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+
+.social-links:hover {
+    background: var(--Green);
+    color: var(--Dark-Grey);
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.7s;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 375px) {
+    .social-links {
+        width: 300px;
+    }
+}
+
+
+
+
+/* End  */
