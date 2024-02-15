@@ -1,0 +1,154 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Root */
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+/* css reset / apply code */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+/* body part */
+
+body {
+    background: var(--Yellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main card part - style */
+
+.main-card {
+    width: 500px;
+    max-width: 700px;
+    height: 650px;
+    background: var(--White);
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 7px 7px 0 black;
+}
+
+/* image container part - responsive trick */
+
+.img-container {
+    max-width: 450px; 
+    margin: 30px auto;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* button part - style */
+
+button {
+    border-radius: 5px;
+    background: var(--Yellow);
+    color: var(--Black);
+    border: 0;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: capitalize;
+    font-weight: 900;
+    margin-left: 22px;
+    letter-spacing: 0.5px;
+}
+
+
+/* h3 text */
+
+h3 {
+    text-transform: capitalize;
+    max-width: 200px;
+    margin: 15px 0 0 22px;
+}
+
+
+/* h1 text */
+
+h1 {
+    margin: 15px 0 0 22px;
+    font-weight: 900;
+    transition: 0.2s;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: var(--Yellow);
+}
+
+/* p text */
+
+p {
+    max-width: 400px;
+    margin: 15px 0 0 22px;
+    color: var(--Black);
+    opacity: 60%;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    font-size: 1.1em;
+}
+
+
+/* img - greg hooper pfp */
+
+.greg-hooper-image-container {
+    display: flex;
+    align-items: center;
+}
+
+.greg-hooper-pfp {
+    width: 45px;
+    margin: 25px 0 0 22px;
+}
+
+/* h2 text */
+
+h2 {
+    padding: 20px 0 0 15px;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: 900;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 375px) {
+    /* img responsive */
+    .img-container img {
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    /* h1 text  responsive */
+
+
+    h1 {
+        font-size: 1.8em;
+    }
+    /* p text responsive */
+
+    p {
+        max-width: 450px;
+        letter-spacing: 0;
+        padding: 0px;
+    }
+}
+
+/* end */
